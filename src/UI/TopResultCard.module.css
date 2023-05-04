@@ -1,0 +1,47 @@
+.top_card {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  border-radius: 2rem;
+  background-color: white;
+}
+
+.top_card:hover h1 {
+  color: #c41230;
+  transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 1171px) {
+  [class*="top_card"] {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+
+.top_card img {
+  margin: 1rem;
+  border-radius: 2rem;
+}
+
+.t_card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0rem 2rem 1rem 2rem;
+}
+
+.card_info h1 {
+  font-size: 1.5rem;
+  width: auto;
+}
+
+.card_info h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  width: auto;
+}
+
+.t_card button {
+  border: none;
+  background-color: transparent;
+}

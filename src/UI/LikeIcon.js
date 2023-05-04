@@ -1,0 +1,19 @@
+import classes from "./iconColourChange.module.css";
+const LikeIcon = () => {
+  return (
+    <svg
+      className={classes.icon}
+      xmlns="http://www.w3.org/2000/svg"
+      width="1.3em"
+      height="1.3em"
+      viewBox="0 -30 254 254"
+    >
+      <path
+        fill="#434141"
+        d="M240 94c0 70-103.79 126.66-108.21 129a8 8 0 0 1-7.58 0C119.79 220.66 16 164 16 94a62.07 62.07 0 0 1 62-62c20.65 0 38.73 8.88 50 23.89C139.27 40.88 157.35 32 178 32a62.07 62.07 0 0 1 62 62Z"
+      ></path>
+    </svg>
+  );
+};
+
+export default LikeIcon;

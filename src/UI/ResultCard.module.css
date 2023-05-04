@@ -1,0 +1,48 @@
+.card {
+  background-color: #f1f1f1;
+  height: auto;
+  width: 9rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0.6rem;
+  border-radius: 1rem;
+  /* box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px; */
+}
+
+.card img {
+  height: auto;
+  width: 100%;
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.top_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.top_div button {
+  margin-right: 0.5rem;
+  border: none;
+  background-color: transparent;
+}
+
+.song_info {
+  width: auto;
+  margin: 0.5rem;
+}
+
+.song_info h1 {
+  font-size: 1rem;
+}
+
+.song_info h2 {
+  font-size: 0.7rem;
+  color: #a2a2a2;
+  font-weight: 200;
+}
+
+.song_info h3 {
+  font-size: 0.7rem;
+  color: #c41230;
+}

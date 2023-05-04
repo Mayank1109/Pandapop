@@ -1,0 +1,40 @@
+.card {
+  background-color: #f1f1f1;
+  height: 6rem;
+  width: 98%;
+  display: flex;
+  flex-direction: row;
+  margin: 0.5rem;
+  border-radius: 10px 10px;
+  /* box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px; */
+}
+
+.card:hover h1 {
+  color: #c41230;
+  transition: all 0.3s ease-in-out;
+}
+
+.album_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2rem;
+}
+
+.album_info h1 {
+  font-size: 1rem;
+  color: #434141;
+}
+
+/* .album_info h1:hover { */
+
+.album_info h2 {
+  font-size: 0.8rem;
+  color: #a2a2a2;
+}
+
+.card img {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 10px 0px 0px 10px;
+}

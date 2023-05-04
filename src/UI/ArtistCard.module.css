@@ -1,0 +1,27 @@
+.t_artist {
+  background-color: transparent;
+  margin: 1rem 0.5rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 8rem;
+  justify-content: center;
+  height: 10rem;
+}
+
+.t_artist:hover h1 {
+  color: #c41230;
+  transition: all 0.3s ease-in-out;
+}
+
+.t_artist img {
+  height: 80%;
+  width: 8.5rem;
+  border-radius: 5px;
+}
+
+.t_artist h1 {
+  font-size: 0.8rem;
+  font-weight: 200;
+  margin-top: 5px;
+}

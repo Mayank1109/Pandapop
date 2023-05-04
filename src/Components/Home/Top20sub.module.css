@@ -1,0 +1,26 @@
+.Top20_Sub {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.time2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.time {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #a2a2a2;
+  padding: 0rem 0rem;
+  margin: 0.5rem;
+}
+
+.time:hover {
+  color: #c41230;
+  font-weight: 600;
+  /* font-size: 1.4rem; */
+  scale: 1.2;
+  transition: all 0.3s ease-in-out;
+}

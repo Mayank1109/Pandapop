@@ -1,0 +1,11 @@
+.home {
+  height: 42.5rem;
+  overflow-y: scroll;
+  overflow-x: auto;
+}
+
+@media only screen and (max-width: 769px) {
+  [class*="home"] {
+    height: 42rem;
+  }
+}

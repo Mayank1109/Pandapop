@@ -1,0 +1,12 @@
+/* .top_result {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 3rem;
+  width: 40%;
+}
+
+@media only screen and (max-width: 1171px) {
+  [class*="top_result"] {
+    width: 80%;
+  }
+} */

@@ -1,0 +1,21 @@
+.outer_div {
+  height: 20rem;
+  width: 100%;
+  margin: 10rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.outer_div img {
+  height: 100%;
+}
+
+@media only screen and (max-width: 841px) {
+  [class*="outer_div"] {
+    margin: 7rem 1rem 1rem 1rem;
+  }
+}
+
+.inner_div h2 {
+  color: #c41230;
+}
