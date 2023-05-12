@@ -16,21 +16,21 @@ const Search = () => {
 
     try {
       const response = await fetch(
-        `https://yt-api.p.rapidapi.com/search?query=${searchQuery}`,
+        `https://youtube-search-results.p.rapidapi.com/youtube-search/?q=${searchQuery}`,
         {
           method: "GET",
           headers: {
             "X-RapidAPI-Key":
               "84701ac01emsh75827ed4d87b809p1cfe69jsneb3682289658",
-            "X-RapidAPI-Host": "yt-api.p.rapidapi.com",
+            "X-RapidAPI-Host": "youtube-search-results.p.rapidapi.com",
           },
         }
       );
 
       const result = await response.json();
-      console.log(result);
-
-      ctx.onSearch(result.data);
+      // console.log(result.items);
+      // console.log(result.items[0].author.name);
+      ctx.onSearch(result.items);
 
       return navigate("/search");
     } catch (error) {

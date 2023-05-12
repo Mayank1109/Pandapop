@@ -7,18 +7,17 @@ const Top20Songs = () => {
 
   const fetchSongsHandler = async () => {
     try {
-      const response = await fetch(
-        "https://spotify-scraper.p.rapidapi.com/v1/chart/tracks/top",
-        {
-          method: "GET",
-          headers: {
-            "content-type": "application/octet-stream",
-            "X-RapidAPI-Key":
-              "84701ac01emsh75827ed4d87b809p1cfe69jsneb3682289658",
-            "X-RapidAPI-Host": "spotify-scraper.p.rapidapi.com",
-          },
-        }
-      );
+      const response = await fetch();
+      // "https://spotify-scraper.p.rapidapi.com/v1/chart/tracks/top",
+      // {
+      //   method: "GET",
+      //   headers: {
+      //     "content-type": "application/octet-stream",
+      //     "X-RapidAPI-Key":
+      //       "84701ac01emsh75827ed4d87b809p1cfe69jsneb3682289658",
+      //     "X-RapidAPI-Host": "spotify-scraper.p.rapidapi.com",
+      //   },
+      // }
 
       const result = await response.json();
 

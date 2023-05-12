@@ -9,6 +9,7 @@ export const AppContextProvider = (props) => {
   const [searchResults, setSearchResults] = useState(null);
   const searchHandler = (searchdata) => {
     setSearchResults(searchdata);
+    // localStorage.setItem("songresults", searchResults);
     // console.log(searchResults);
   };
 
