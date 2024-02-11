@@ -3,27 +3,24 @@ import DownloadButton from "./DownloadButton";
 import classes from "./ResultCard.module.css";
 
 const ResultCard = (props) => {
-  // const ctx = useContext(appContext);
-
   const downloadSongHandler = async (event) => {
     event.preventDefault();
-    console.log(props.downloadId);
+
     try {
-      const response = await fetch(
-        `https://youtube-mp36.p.rapidapi.com/dl?id=${props.downloadId}`,
-        {
-          method: "GET",
-          headers: {
-            "X-RapidAPI-Key":
-              "84701ac01emsh75827ed4d87b809p1cfe69jsneb3682289658",
-            "X-RapidAPI-Host": "youtube-mp36.p.rapidapi.com",
-          },
-        }
-      );
+      const url = `https://youtube-mp3-downloader2.p.rapidapi.com/ytmp3/ytmp3/?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D${props.downloadId}`;
+      const options = {
+        method: "GET",
+        headers: {
+          "X-RapidAPI-Key":
+            "84701ac01emsh75827ed4d87b809p1cfe69jsneb3682289658",
+          "X-RapidAPI-Host": "youtube-mp3-downloader2.p.rapidapi.com",
+        },
+      };
+
+      const response = await fetch(url, options);
 
       const result = await response.json();
-      console.log(result);
-      console.log(result.link);
+
       window.location.replace(result.link);
     } catch (error) {
       console.error(error.message);

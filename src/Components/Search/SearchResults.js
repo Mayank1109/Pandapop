@@ -1,31 +1,30 @@
 import placeholder from "../../Assets/Dummy_pics/2.png";
 import EmptySearchResults from "./EmptySearchResults";
-import { useContext } from "react";
+
 import ResultCard from "../../UI/ResultCard";
-import appContext from "../app-Context";
+import { useSelector } from "react-redux";
 const SearchResults = () => {
-  const ctx = useContext(appContext);
-  console.log(ctx.searchResults);
+  const searchResults = useSelector((state) => state.result.searchResults);
   return (
     <>
-      {ctx.searchResults &&
-        ctx.searchResults.map((song) => (
+      {searchResults &&
+        searchResults.map((song) => (
           <ResultCard
-            downloadId={song.id}
-            key={song.id}
+            downloadId={song.videoId}
+            key={song.videoId}
             name={song.title}
             artist={
               // song.author?.name.length < 11
               //   ? song.author.name
               //   : song.author.name.slice(0, 13) + "..."
-              song.author ? song.author.name : "--"
+              song.ChannelTitle ? song.ChannelTitle : "--"
             }
-            duration={song.duration}
-            src={song.bestThumbnail ? song.bestThumbnail.url : placeholder}
+            duration={song.lengthText}
+            src={song.thumbnail ? song.thumbnail[0].url : placeholder}
           />
         ))}
 
-      {!ctx.searchResults && <EmptySearchResults />}
+      {!searchResults && <EmptySearchResults />}
     </>
   );
 };

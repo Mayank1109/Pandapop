@@ -22,40 +22,6 @@ const SongSlider = (props) => {
       items: 1,
     },
   };
-
-  // const DUMMY__SONGS = [
-  //   {
-  //     key: "s5",
-  //     name: "Shut Down",
-  //     artist: "Blackpink",
-  //     src: "https://i.scdn.co/image/ab67616d00001e0259ae8cf65d498afdd5585634",
-  //   },
-
-  //   {
-  //     key: "s1",
-  //     name: "Melting",
-  //     artist: "Kali Uchis",
-  //     src: "https://i.scdn.co/image/ab67616d00001e0259ae8cf65d498afdd5585634",
-  //   },
-  //   {
-  //     key: "s2",
-  //     name: "Moon River",
-  //     artist: "Carla Bruni",
-  //     src: "https://i.scdn.co/image/ab67616d00001e0259ae8cf65d498afdd5585634",
-  //   },
-  //   {
-  //     key: "s3",
-  //     name: "Sugar in a bowl",
-  //     artist: "Monsters & Men",
-  //     src: "https://i.scdn.co/image/ab67616d00001e0259ae8cf65d498afdd5585634",
-  //   },
-  //   {
-  //     key: "s4",
-  //     name: "Brooklyn Baby",
-  //     artist: "Lana Del Rey",
-  //     src: "https://i.scdn.co/image/ab67616d00001e0259ae8cf65d498afdd5585634",
-  //   },
-  // ];
   return (
     <>
       <Carousel

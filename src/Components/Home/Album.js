@@ -9,16 +9,16 @@ const Album = () => {
     try {
       const response = await fetch(
         "https://spotify117.p.rapidapi.com/new_releases/?country=us",
-      {
-        method: "GET",
-        headers: {
-          "content-type": "application/octet-stream",
-          "X-RapidAPI-Key":
-            "84701ac01emsh75827ed4d87b809p1cfe69jsneb3682289658",
-          "X-RapidAPI-Host": "spotify117.p.rapidapi.com",
-        },
-      });
-    
+        {
+          method: "GET",
+          headers: {
+            "content-type": "application/octet-stream",
+            "X-RapidAPI-Key":
+              "84701ac01emsh75827ed4d87b809p1cfe69jsneb3682289658",
+            "X-RapidAPI-Host": "spotify117.p.rapidapi.com",
+          },
+        }
+      );
 
       const result = await response.json();
       console.log(result);
